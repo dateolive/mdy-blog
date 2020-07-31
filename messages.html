@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>留言板</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css" >
+  <link rel="stylesheet" href="./css/style.css" >
+  <link rel="stylesheet" href="./css/timeline.css">
+</head>
+<body>
+
+  <!--导航-->
+  <nav class="ui attached segment m-padding-tb-mini m-shadow-small animated fadeInDown">
+    <div class="ui container ">
+        <div class="ui secondary  stackable menu ">
+            <a href="/" class="item">
+                <h2 class="ui header item" style="color: #58a3f8">梦独吟</h2>
+            </a>&nbsp;
+            <a href="./index.html" class="item m-item m-mobile-hide "><i class="home icon"></i>首页</a>
+            <a href="./type.html" class="m-item item  m-mobile-hide"><i class="idea icon"></i>分类</a>
+            <a href="./tags.html" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+            <a href="./filing.html" class="m-item  item m-mobile-hide"><i class="clock icon"></i>归档</a>
+            <a href="./about.html" class="item m-item  m-mobile-hide"><i class="info icon"></i>关于我</a>
+            <a href="./messages.html" target="_blank" class=" item   m-item  m-mobile-hide"><i class="mail icon  "></i>留言板</a>
+            <a href="./friends.html" class=" item   m-item  m-mobile-hide"><i class="linkify icon"></i>友链</a>
+
+            <div class="right m-item item m-mobile-hide">
+                <form name="search" action="/search" method="post">
+                    <div class="ui icon  transparent  input">
+                        <input type="text" value="" name="query" placeholder="Search..." class="text" style="color:#606af5">
+                        <i onclick="document.forms['search'].submit()" class="search link icon  "></i>
+                    </div>
+                </form>
+            </div>
+      </div>
+    </div>
+    <a href="#" class="ui big menu toggle m-black icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+  </nav>
+  <!--end-->
+
+  <!--中间布局-->
+    <div  class="m-container m-padded-tb-big animated fadeIn">
+        <div class="ui container">
+            <div class="ui padded segment">
+                <!--作者信息-->
+                <div class="ui attached error message m-opacity-mini">
+                  <div class="ui grid">
+                      <div class="eleven wide column">
+                          <ui class="list">
+                              <li>任何问题都可以在此处留言，如未及时回复可以邮件。</li>
+                              <li>博主只是个新手……
+                              </li>
+                              <li>如果要吐槽的话，就狠狠地吐槽……</li>
+                              <li>如果有问题求教的话，博主在能力范围内能答就答咯~</li>
+                          </ui>
+                      </div>
+                      <div class="five wide column">
+                          <img src="/img/background.jpg" alt="" class="ui right floated rounded bordered image" style="width: 110px">
+                      </div>
+                  </div>
+                </div>
+                <!--end-->
+                <div class="ui horizontal divider">
+                  <i class="comment icon"></i>
+                  发表评论
+                </div>
+                <!--留言-->
+              <div id="comment-container" class="comment"></div>
+              <!--end-->
+            </div>
+
+        </div>
+    </div>
+  <!--end-->
+  <br>
+  <br>
+ <!--底部footer-->
+ <footer  class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+      <div class="ui inverted divided stackable grid">
+        <div class="centered wide column">
+          <h4 class="ui inverted header m-text-thin m-text-spaced ">梦独吟</h4>
+          <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客、记录学习进度和关于编程、写作、思考相关的任何内容...</p>
+        </div>
+      </div>
+      <div class="ui inverted section divider"></div>
+      <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2020 zhangrenfeng</p>
+      <p class="m-text-thin m-text-spaced m-opacity-tiny">粤ICP备20036790号-1</p>
+    </div>
+</footer>
+  
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+  <script src="./js/timeline.min.js"></script>
+  <script type="text/javascript">var s = skrollr.init();</script>
+     <!--Leancloud 操作库:-->
+     <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+     <!--Valine 的核心代码库-->
+     <script src="https://www.fujiatian.com/js/src/Valine.min.js"></script>
+     <script>
+         new Valine({
+             av: AV, 
+             el: '.comment',
+             emoticon_url: 'https://cloud.panjunwen.com/alu',
+       emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
+       app_id: 'fT2k5EJSvodrpXIUUXJbzObW-gzGzoHsz',
+       app_key: 'yM3cnjF0xkoEfOUEuIwwIMV8',
+       placeholder: 'Write a Comment'
+         });
+     </script>
+  <script>
+   $('.menu.toggle').click(function () {
+      $('.m-item').toggleClass('m-mobile-hide');
+    });
+    $('.wechat').popup({
+      popup : $('.wechat-qr'),
+      position: 'bottom center'
+    });
+    $('.qq').popup();
+    $('.github').popup();
+    $('.steam').popup();
+
+  </script>
+</body>
+</html>
+
+

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>标签</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css" >
+  <link rel="stylesheet" href="./css/style.css" >
+</head>
+<body>
+
+  <!--导航-->
+  <nav class="ui attached segment m-padding-tb-mini m-shadow-small animated fadeInDown">
+    <div class="ui container ">
+        <div class="ui secondary  stackable menu ">
+            <a href="/" class="item">
+                <h2 class="ui header item" style="color: #58a3f8">梦独吟</h2>
+            </a>&nbsp;
+            <a href="./index.html" class="item m-item m-mobile-hide "><i class="home icon"></i>首页</a>
+            <a href="./type.html" class="m-item item  m-mobile-hide"><i class="idea icon"></i>分类</a>
+            <a href="./tags.html" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+            <a href="./filing.html" class="m-item  item m-mobile-hide"><i class="clock icon"></i>归档</a>
+            <a href="./about.html" class="item m-item  m-mobile-hide"><i class="info icon"></i>关于我</a>
+            <a href="./messages.html" target="_blank" class=" item   m-item  m-mobile-hide"><i class="mail icon  "></i>留言板</a>
+            <a href="./friends.html" class=" item   m-item  m-mobile-hide"><i class="linkify icon"></i>友链</a>
+
+            <div class="right m-item item m-mobile-hide">
+                <form name="search" action="/search" method="post">
+                    <div class="ui icon  transparent  input">
+                        <input type="text" value="" name="query" placeholder="Search..." class="text" style="color:#606af5">
+                        <i onclick="document.forms['search'].submit()" class="search link icon  "></i>
+                    </div>
+                </form>
+            </div>
+      </div>
+    </div>
+    <a href="#" class="ui big menu toggle m-black icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+  </nav>
+  <!--end-->
+
+  <!--中间布局-->
+    <div  class="m-container m-padded-tb-big animated fadeIn">
+        <div class="ui container">
+          <div class="ui stackable grid">
+            <!--左边博客列表-->
+            <div class="eleven wide column">
+                <h3 class="ui center aligned grey inverted icon header">
+                    <i class="circular  outline grey inverted tags icon"></i>
+                    java
+                </h3>
+                <br>
+                <div class="ui link centered cards">
+                    <div class="card" onclick="window.open('article.html')">
+                      <div class="image">
+                        <img src="./img/background.jpg">
+                      </div>
+                      <div class="content">
+                        <div class="header" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">
+                          <a href=""  target="_blank" class="m-black">博客开发日记一</a>
+                        </div>
+                        <br>
+                        <div class="meta">
+                            <a class="ui mini  label">
+                                <img class="ui right spaced avatar image" src="https://image.datealive.top/images/2020/05/21/header.jpg">
+                                梦独吟
+                            </a>
+                        </div>
+                        <div class="description" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">
+                          
+                          今天是开发博客第一天！冲冲冲！！加油加油！！！！！！！！！！！！！！！！！！！！！！！！
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <span class="right floated">
+                            <a class="ui mini label">
+                                <i class="tags icon"></i>
+                                JAVA
+                              </a>
+                        </span>
+                        <span>
+                            <i class="clock outline icon"></i>2020-07-28
+                        </span>
+                      </div>
+                    </div>
+                    <div class="card" onclick="window.open('article.html')">
+                        <div class="image">
+                          <img src="./img/background.jpg">
+                        </div>
+                        <div class="content">
+                          <div class="header" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">博客开发日记一</div>
+                          <br>
+                          <div class="meta">
+                              <a class="ui mini  label">
+                                  <img class="ui right spaced avatar image" src="https://image.datealive.top/images/2020/05/21/header.jpg">
+                                  梦独吟
+                              </a>
+                          </div>
+                          <div class="description" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">
+                            今天是开发博客第一天！冲冲冲！！加油加油！！！！！！！！！！！！！！！！！！！！！！！！
+                          </div>
+                        </div>
+                        <div class="extra content">
+                          <span class="right floated">
+                              <a class="ui mini label">
+                                  <i class="tags icon"></i>
+                                  JAVA
+                                </a>
+                          </span>
+                          <span>
+                              <i class="clock outline icon"></i>2020-07-28
+                          </span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <br>
+                <!--分页footer-->
+                <div class="next-footer">
+                    <div class="ui borderless pagination menu">
+                        <a class="item">
+                        <i class="left arrow icon"></i>上一页</a>
+                        <a class="item">1</a>
+                        <a class="item">2</a>
+                        <a class="item">...</a>
+                        <a class="item">30</a>
+                        <a class="item">
+                        下一页 <i class="icon right arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--右边栏-->
+            <div class="five wide column">
+                <!--标签-->
+                <div class="ui segments m-margin-top-large">
+                    <div class="ui secondary segment">
+                    <div class="ui two column grid">
+                        <div class="column">
+                        <i class="tags icon"></i>标签
+                        </div>
+                    </div>
+                    </div>
+                    <div class="ui black segment">
+                        <div class="ui violet labels">
+                            <a href="#" target="_blank" class="ui label">
+                                <i class="tags icon"></i>
+                                <span>java</span> 
+                            </a>
+                            <!--/*-->
+                            <a class="ui label">
+                                <i class="tags icon"></i>
+                                JAVA
+                              </a>
+                              <a class="ui label">
+                                <i class="tags icon"></i>
+                                JAVA
+                              </a>
+                              <a class="ui label">
+                                <i class="tags icon"></i>
+                                JAVA
+                              </a>
+                              <a class="ui label">
+                                <i class="tags icon"></i>
+                                JAVA
+                              </a>
+                              <a class="ui label">
+                                <i class="tags icon"></i>
+                                JAVA
+                              </a>
+                              <br><br>
+                            <!--*/-->
+                        </div>
+                    </div>
+                </div>
+                <!--end-->
+                <!--关于我-->
+                <div class="ui segments">
+                    <div class="ui stackable grid">
+                     
+                      <div class="column">
+                        <div class="ui top attached segment">
+                          <div class="ui header">关于我</div>
+                        </div>
+                        <div class="ui attached segment">
+                          <div class="ui fluid card attached">
+                              <a class="image" href="#">
+                                  <img class="ui medium circular image" src="https://www.datealive.top/wp-content/uploads/2020/05/26.jpg">
+                              </a>
+                              <div class="content" style="text-align: center;">
+                                  <a class="header " href="#">梦独吟</a>
+                                  <div class="meta">
+                                      <a></a>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="ui attached segment">
+                          <div class="ui blue basic left pointing label">编程</div>
+                          <div class="ui orange basic left pointing label">游戏</div>
+                          <div class="ui yellow basic left pointing label">思考</div>
+                          <div class="ui black basic left pointing label">.....</div>
+                        </div>
+                        
+                        <div class="ui bottom attached segment">
+                          <a href="#" class="ui inverted github circular icon button" data-content="..." data-position="bottom center"><i class="black github icon"></i></a>
+                          <a href="#" class="ui inverted wechat circular icon button"><i class="green weixin icon"></i></a>
+                          <a href="#" class="ui inverted steam circular icon button" data-content="梦独吟" data-position="bottom center"><i class="black steam icon"></i></a>
+                          <a href="#" class="ui inverted qq circular icon button" data-content="2448282543" data-position="bottom center"><i class="blue qq icon"></i></a>
+                        </div>
+              
+                        <div class="ui wechat-qr flowing popup transition hidden">
+                          <img src="./img/background.jpg" alt="" class="ui rounded image" style="width: 110px">
+                        </div>
+                        </div>
+                    </div>
+                  
+                
+                    
+                  </div>
+                  <!--end-->
+            </div>
+        </div>
+        </div>
+    </div>
+  <!--end-->
+  <br>
+  <br>
+ <!--底部footer-->
+ <footer class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+      <div class="ui inverted divided stackable grid">
+        <div class="centered wide column">
+          <h4 class="ui inverted header m-text-thin m-text-spaced ">梦独吟</h4>
+          <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客、记录学习进度和关于编程、写作、思考相关的任何内容...</p>
+        </div>
+      </div>
+      <div class="ui inverted section divider"></div>
+      <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2020 zhangrenfeng</p>
+      <p class="m-text-thin m-text-spaced m-opacity-tiny">粤ICP备20036790号-1</p>
+    </div>
+</footer>
+  
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+
+
+  <script>
+   $('.menu.toggle').click(function () {
+      $('.m-item').toggleClass('m-mobile-hide');
+    });
+    $('.wechat').popup({
+      popup : $('.wechat-qr'),
+      position: 'bottom center'
+    });
+    $('.qq').popup();
+    $('.github').popup();
+    $('.steam').popup();
+
+  </script>
+</body>
+</html>
+
+
